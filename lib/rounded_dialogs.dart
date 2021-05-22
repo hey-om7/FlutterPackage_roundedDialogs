@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 class ShowRoundedDialog {
   ShowRoundedDialog({
-    @required this.child,
-    @required this.height,
-    @required this.width,
+    required this.child,
+    required this.height,
+    required this.width,
     this.curveRadius,
   });
   final child;
-  final int curveRadius;
+  final int? curveRadius;
   final double height;
   final double width;
 
@@ -21,7 +21,7 @@ class ShowRoundedDialog {
           return Dialog(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(
-                    curveRadius == null ? 35 : curveRadius)),
+                    curveRadius == null ? 35 : curveRadius as double)),
             child: Container(
               clipBehavior: Clip.hardEdge,
               height: height,
@@ -30,7 +30,7 @@ class ShowRoundedDialog {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(
-                    curveRadius == null ? 35 : curveRadius),
+                    curveRadius == null ? 35 : curveRadius as double),
               ),
             ),
           );
