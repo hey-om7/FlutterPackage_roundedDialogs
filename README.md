@@ -1,6 +1,6 @@
-# Get File Contents From
+# Rounded Dialogs
 
-## Easiest Dart Package for Getting all the files and folders in the given path
+## Easiest Flutter Package for Custom Rounded Dialogs
 
 ![https://www.buymeacoffee.com/heyom](https://github.com/hey-om7/FlutterPackage_roundedDialogs/blob/main/forReadme/buymecoffee.png)
 https://www.buymeacoffee.com/heyom
@@ -21,7 +21,7 @@ https://www.buymeacoffee.com/heyom
 ShowRoundedDialog(child: Center(child: Text('Congrats!!!')),height: 200,width: 250).showCustomDialog(context);
 ```
 
-## If you take an example to fit:(For beginners to understand)
+## If you take an example to fit (For beginners to understand)
 
 ```
 ElevatedButton(
