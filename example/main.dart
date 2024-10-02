@@ -15,11 +15,13 @@ class MyApp extends StatelessWidget {
           child: ElevatedButton(
             child: Text('Show Dialog'),
             onPressed: () {
-              ShowRoundedDialog(
-                      child: Center(child: Text('Congrats!!!')),
-                      height: 200,
-                      width: 250)
-                  .showCustomDialog(context);
+              myRoundedDialogBox(
+                context: context,
+                child: Text("Hello"),
+                height: 200,
+                width: 200,
+                curveRadius: 20,
+              );
             },
           ),
         ),
