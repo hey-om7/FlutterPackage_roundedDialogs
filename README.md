@@ -27,11 +27,13 @@ ShowRoundedDialog(child: Center(child: Text('Congrats!!!')),height: 200,width: 2
 ElevatedButton(
             child: Text('Show Dialog'),
             onPressed: () {
-              ShowRoundedDialog(
-                      child: Center(child: Text('Congrats!!!')),
-                      height: 200,
-                      width: 250)
-                  .showCustomDialog(context);
+                myRoundedDialogBox(
+                  context: context,
+                  child:Center(child: Text('Congrats!!!')),
+                  height: 200,
+                  width: 200,
+                  curveRadius: 20,
+              );
             },
           ),
 ```
